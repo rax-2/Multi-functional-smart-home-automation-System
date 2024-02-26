@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.text_1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.text_2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+body {
+    background-color: rgb(46, 0, 39);
+
+}
+
+.site_body {
+    margin: 4px 8px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.094);
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+header {
+    padding-top: 8px;
+    margin: 10px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.196);
+    padding: 0px 30px;
+    border-radius: 20px;
+    display: flex;
+
+    .site_logo {
+        padding: 8px;
+        color: white;
+    }
+
+    .menu {
+        list-style-type: none;
+        display: none;
+        padding: 8px;
+
+        @media (min-width: 830px) {
+            margin-left: auto;
+            display: flex;
+        }
+
+        li {
+            padding-left: 20px;
+        }
+    }
+}
+
+/* uniqe for page */
+
+main {
+    margin-top: 20px;
+    margin-right: 2dvw;
+    margin-left: 2dvw;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site_main {
+    background-color: rgba(255, 255, 255, 0.05);
+    /* padding: 4dvh 4dvw; */
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.message_text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2dvh;
+    color: white;
+    /* text-decoration:; */
+    font-weight: bold;
+    /* font-style: ; */
+}
+
+.about_project{
+    background-color: rgba(240, 248, 255, 0.141);
+    margin: 4vh 4vw; 
+    padding: 2vh 2vw;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    .topic_head{
+        color: white;
+        font-size: 2vh;
+        margin-bottom: 1vh;
+    }
+
+    .topic_body{
+        color: white;
+        font-size: 1.5vh;
+        margin-bottom: 1vh;
+    }
+}
+
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.118);
+    border-radius: 20px;
+}
+
+.social_icon {
+    height: 4dvh
+}
+
+.social_text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2dvh;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.media_div{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.media{
+    width: 30vh;
+    /* size: 2px; */
+    border-radius: 10px;
+    margin: 1vw;
+}
+
+
+/* uniqe for page end */
+
+.footer_bar {
+    position: fixed;
+    bottom: 8px;
+    left: 10px;
+}
+
+.footer_text {
+    font-size: 12px;
+    padding: 4px 6px;
+    background-color: rgba(255, 255, 255, 0.131);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text_home {
+    display: none;
+}
+
+@media (max-width: 830px) {
+    .text_home {
+        display: flex;
+    }
+
+    header {
+        overflow: hidden;
+    }
+
+    /* 
+    main {
+        background-color: rgba(255, 255, 255, 0.051);
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 110%;
+    } */
+
+
+
+    nav {
+        /* position: sticky; */
+        /* top: 4px; */
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 0px 10px;
+        border-radius: 20px;
+        display: flex;
+
+        .site_logo {
+            display: none;
+            /* position: n; */
+            padding: 8px;
+            color: white;
+        }
+
+        .menu {
+            font-size: smaller;
+            list-style-type: none;
+            /* margin-left: auto; */
+            display: flex;
+            padding: 4px;
+            /* padding-left: 1px; */
+
+            @media (min-width: 640px) {
+                display: flex;
+            }
+
+            li {
+                padding-left: 4%;
+            }
+        }
+    }
+
+    .site_main {
+        /* background-color: rgba(255, 255, 255, 0.05); */
+        padding: 1dvh 2dvw;
+        border-radius: 20px;
+    }
+
+    .message_text {
+        margin: 20px;
+    }
+
+
+}
