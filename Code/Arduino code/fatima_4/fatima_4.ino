@@ -6,11 +6,11 @@ const int buzzer_pin = 5;                // Digital pin for buzzer
 const int relay_pin = 3;                 // Main Line Relay
 const int switch_1_pin = 2;              // ESP 8266 switching
 const int switch_2_pin = 9;              // ESP 8266 switching
-const int switch_1_check = 7;            //Switch 2 Status
-const int switch_2_check = 8;            //Switch 2 Status
+const int switch_1_check = 7;            // Switch 1 Status
+const int switch_2_check = 8;            // Switch 2 Status
 
-int gas_threshold = 80;
-int fire_threshold = 20;
+int gas_threshold = 80;                  // Gas sensor threshold
+int fire_threshold = 20;                 // Flame sensor threshold
 int switch_1_state;
 int switch_2_state;
 int gas;
